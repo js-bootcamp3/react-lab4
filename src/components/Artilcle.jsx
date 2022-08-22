@@ -43,9 +43,9 @@ export default class Article extends React.Component {
       }
     }
 
-    console.log('render');
     return (
       <div>
+        <h1>{this.props.text?.length}</h1>
         <button onClick={this.handleShow}>
         {this.state.show ? 'Hide' : 'Show'}
         </button>
